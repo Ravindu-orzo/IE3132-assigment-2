@@ -1,7 +1,7 @@
 # AVALON CTF
 ## 1. SETUP and RUNNING the CTF platform (Docker image)
 
-1. Simply extract the "AVALON CTF" zip.
+1. run `git clone https://github.com/Ravindu-orzo/IE3132-assigment-2.git`.
 2. Make sure docker desktop is running
 3. Open powershell within the extracted folder "AVALON CTF" and run `docker compose up --build`
 4. Open `localhost:8080/` on your web browser
