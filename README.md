@@ -34,4 +34,16 @@
 |             |              |               | IT24103309 Daskon W.W.D.A.M.P.B |
 |             |              |               | IT24103973 Sirimanna H.T.       |
 
+### 5. Stage description
 
+# AVALON CTF — Stage Summary Table
+
+| Stage | Title | Domain | Difficulty | What the Player Has to Do |
+|-------|-------|--------|------------|---------------------------|
+| 01 | Hidden in the Plain Sight | Steganography | Easy | Inspect an image's metadata to find a hidden hex string, decode it, reverse the flag, and submit it. |
+| 02 | Can't Fake Permissions | Linux / System Security | Easy | SSH into a VM, use `ls -l` to find the single binary with owner execute permission, then grep it for the flag. |
+| 03 | The Archivist's Secret | Cryptography | Easy | Copy apparently redacted text from a PDF, reconstruct a broken Base64 string, decode it, then apply a Caesar shift of 7. |
+| 04 | Crack in the Armor | Cryptography | Medium | Extract a ZIP hash with zip2john, crack it using John the Ripper and a surname wordlist, then extract `data.txt` for the flag. |
+| 05 | Captured Login | Digital Forensics / Networking | Medium | Open a PCAPNG in Wireshark, filter HTTP POST traffic, recover stolen credentials, log into the website, and read the flag. |
+| 06 | Encrypted Secrets | Reverse Engineering | Hard | Analyze an `Encrypter` binary with `strings` or Ghidra to recover the hardcoded XOR key, then decrypt the message for the flag. |
+| 07 | The Unwritten Trail | OSINT | Hard | Follow a chain of linked clues (leaked username, breach dump, archived profiles, link-in-bio) to reach the final Instagram profile containing the flag. |
