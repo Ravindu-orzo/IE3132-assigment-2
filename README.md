@@ -36,8 +36,6 @@
 
 ### 5. Stage description
 
-# AVALON CTF — Stage Summary Table
-
 | Stage | Title | Domain | Difficulty | What the Player Has to Do |
 |-------|-------|--------|------------|---------------------------|
 | 01 | Hidden in the Plain Sight | Steganography | Easy | Inspect an image's metadata to find a hidden hex string, decode it, reverse the flag, and submit it. |
