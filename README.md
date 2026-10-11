@@ -19,13 +19,10 @@
 
 ### 4. Automation/solver scripts (IT24103645 & IT24102401)
 
-| Stage Number and Name   | Script Name             | How to Run and What It Does | Made By                        |
-| ----------------------- | ----------------------- | --------------------------- | ------------------------------ |
-| 04 - Crack in the armor | `crack_in_the_armor.sh` | 1. run this script with this command inside the folder that has protected zip file and the wordlist. 
-2. `chmod +x crack_in_the_armor.sh`.
-3. Then run this `./crack_in_the_armor.sh protected.zip wordlist-surnames-SL.txt` 
+| Stage Number and Name   | Script Name             | How to Run and What It Does                                                                                                                                                                                                                                                                                                                                                                         | Made By                        |
+| ----------------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| 04 - Crack in the armor | `crack_in_the_armor.sh` | **How to run:**<br>1. Place this script in the same folder as the protected ZIP file and the wordlist.<br>2. Make the script executable: `chmod +x crack_in_the_armor.sh`<br>3. Run the script: `./crack_in_the_armor.sh protected.zip wordlist-surnames-SL.txt`<br><br>**What it does:**<br>Extracts the password hash from the ZIP file, then searches the wordlist for a matching password hash. | IT24103645 Wijayarathna P.R.M. |
 
-This script will extract the password hash from zip file then find the matching hash from wordlist| IT24103645 Wijayarathna P.R.M. |
 
 
 ### 5. Test scripts (IT24103309)
