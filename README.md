@@ -27,7 +27,7 @@
 
 
 
-### 4. Test scripts (IT24103309)
+### 4. Test scripts (IT24103309 & IT24103973)
 
 | Script Name | What It Does | How to Run It | Made By                         |
 | ----------- | ------------ | ------------- | ------------------------------- |
