@@ -1,0 +1,49 @@
+services:
+  web:
+    build: .
+    image: avalon-ctf-web
+    container_name: avalon_web
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-8080}:80"
+    environment:
+      DB_HOST: db
+      DB_PORT: "3306"
+      DB_NAME: ${MYSQL_DATABASE}
+      DB_USER: ${MYSQL_USER}
+      DB_PASS: ${MYSQL_PASSWORD}
+    volumes:
+      # Challenge files (served only through download.php). Read-only.
+      - ./attachments:/var/www/html/attachments:ro
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: mysql:8.4
+    container_name: avalon_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - db_data:/var/lib/mysql
+      # Runs ONLY on first start (empty data volume), in alphabetical order:
+      #   01_schema.sql -> 02_data.sql
+      - ./database:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -uroot -p$$MYSQL_ROOT_PASSWORD --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 20s
+    # No "ports:" on purpose - MySQL is only reachable from the web container.
+    # Uncomment to inspect it from the host:
+    ports:
+      - "127.0.0.1:3306:3306"
+    # uncommented by Ravindu (Need to add some data into the database so gonna open this port to DBveaer)
+
+volumes:
+  db_data:

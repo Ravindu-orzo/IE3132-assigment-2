@@ -1,0 +1,16 @@
+# Deny all direct HTTP access to this folder.
+# Files here must only ever be served through download.php, which
+# enforces login + sequential-unlock checks before streaming a file.
+# Without this, anyone who guessed/found a filename could bypass those
+# checks entirely by requesting it directly.
+
+# Apache 2.4+
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+
+# Apache 2.2 (older InfinityFree stacks) - harmless if unsupported
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>
