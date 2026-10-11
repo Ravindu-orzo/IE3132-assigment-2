@@ -21,7 +21,11 @@
 
 | Stage Number and Name   | Script Name             | How to Run and What It Does | Made By                        |
 | ----------------------- | ----------------------- | --------------------------- | ------------------------------ |
-| 04 - Crack in the armor | `crack_in_the_armor.sh` | run this script with this command inside the folder that has protected zip file and the wordlist. \n `chmod +x crack_in_the_armor.sh`. \nThen run this `./crack_in_the_armor.sh protected.zip wordlist-surnames-SL.txt`    | IT24103645 Wijayarathna P.R.M. |
+| 04 - Crack in the armor | `crack_in_the_armor.sh` | 1. run this script with this command inside the folder that has protected zip file and the wordlist. 
+2. `chmod +x crack_in_the_armor.sh`.
+3. Then run this `./crack_in_the_armor.sh protected.zip wordlist-surnames-SL.txt` 
+
+This script will extract the password hash from zip file then find the matching hash from wordlist| IT24103645 Wijayarathna P.R.M. |
 
 
 ### 5. Test scripts (IT24103309)
