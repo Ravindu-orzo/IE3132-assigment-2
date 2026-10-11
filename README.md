@@ -6,7 +6,7 @@
 3. Open powershell within the extracted folder "AVALON CTF" and run `docker compose up --build`
 4. Open `localhost:8080/` on your web browser
 
-## 3. Flags for all stages:
+## 2. Flags for all stages:
 | Stage No. | Stage Name             | Flag                                    |
 | :-------: | ---------------------- | --------------------------------------- |
 |     01    | Hidden in plainsight   | `AVALON{tHe_D00R_Ha$_App3ArEd}`         |
@@ -17,7 +17,7 @@
 |     06    | Encrypted secrets      | `AVALON{w4tch_br3aking_b4d_1ts_g00d}`   |
 |     07    | The unwritten trail    | `AVALON{Av4l0n_W4s_N3v3r_F0rg0tt3n}`    |
 
-### 4. Automation/solver scripts (IT24103645 & IT24102401)
+### 3. Automation/solver scripts (IT24103645 & IT24102401)
 
 | Stage Number and Name         | Script Name                | How to Run and What It Does                                                                                                                                                                                                                                                                                                                                                                         | Made By                        |
 | ----------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
@@ -27,4 +27,11 @@
 
 
 
-### 5. Test scripts (IT24103309)
+### 4. Test scripts (IT24103309)
+
+| Script Name | What It Does | How to Run It | Made By                         |
+| ----------- | ------------ | ------------- | ------------------------------- |
+|             |              |               | IT24103309 Daskon W.W.D.A.M.P.B |
+|             |              |               | IT24103973 Sirimanna H.T.       |
+
+
